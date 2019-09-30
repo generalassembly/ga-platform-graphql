@@ -18,6 +18,7 @@ CMD graphql-engine \
    serve \
    --server-port $PORT \
    --access-key $HASURA_GRAPHQL_ADMIN_SECRET \
-   --auth-hook $CREATE_API_HOOK
+   --auth-hook $CREATE_API_HOOK \
+   --enable-telemetry=false
 #
 # Console can be enable/disabled by the env var HASURA_GRAPHQL_ENABLE_CONSOLE
